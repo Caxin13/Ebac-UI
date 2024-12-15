@@ -17,9 +17,10 @@ namespace Screens
 
 public class ScreenBase : MonoBehaviour
 {
-    public TouchScreenKeyboardType screenType;
+    public ScreenType screenType;
 
     public List<Transform> listOfObjects;
+    public List<Typer> listOfPhrases;
 
     public bool StartHidden = false;
 
@@ -62,6 +63,16 @@ public class ScreenBase : MonoBehaviour
 
             obj.gameObject.SetActive(true);
             obj.DOScale(0, animationDuration).From().SetDelay(i * delayBetweenObjects);
+        }
+
+        Invoke(nameof(StartType), delayBetweenObjects * listOfObjects.Count);
+    }
+
+    private void StartType()
+    {
+        for (int i = 0; i < listOfPhrases.Count; i++)
+        {
+            listOfPhrases[i].StartType();
         }
     }
 

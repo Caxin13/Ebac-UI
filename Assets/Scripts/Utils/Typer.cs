@@ -17,7 +17,7 @@ public class Typer : MonoBehaviour
 
     [NaughtyAttributes.Button]
 
-    private void StartType()
+    public void StartType()
     {
         StartCoroutine(Type(phrase));
     }

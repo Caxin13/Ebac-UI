@@ -725,7 +725,7 @@ MonoBehaviour:
   - {fileID: 748941367}
   listOfPhrases: []
   uiBackground: {fileID: 2099691400}
-  StartHidden: 1
+  StartHidden: 0
   delayBetweenObjects: 0.05
   animationDuration: 0.3
 --- !u!114 &2099691400 stripped
@@ -1736,6 +1736,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1347561137966411067, guid: d9f1eab8509cab84c8deac6f16b2db0c, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1347561138099279655, guid: d9f1eab8509cab84c8deac6f16b2db0c, type: 3}
+      propertyPath: m_CullTransparentMesh
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1347561138099279656, guid: d9f1eab8509cab84c8deac6f16b2db0c, type: 3}

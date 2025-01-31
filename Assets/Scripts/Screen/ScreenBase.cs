@@ -39,16 +39,16 @@ namespace Screens
         }
 
         [Button]
-        protected virtual private void Show()
+        public virtual void Show()
         {
             ShowObjects();
             Debug.Log("show");
         }
 
         [Button]
-        protected virtual void Hide()
+        public virtual void Hide()
         {
-            Debug.Log("Show");
+            Debug.Log("Hide");
             HideObjects();
         }
 

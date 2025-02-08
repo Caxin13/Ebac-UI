@@ -1,19 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Random = UnityEngine.Random;
 using UnityEditor;
 
 [CustomEditor(typeof(Car))]
 
 public class CarEditor : Editor
 {
-    [UnityEditor.MenuItem("Ebac/Test")]
-    public static void Test()
-    {
-        Debug.Log("Test");
-    }
-
+  
 
     public override void OnInspectorGUI()
     {

@@ -9,17 +9,23 @@ namespace Screens
 public class ScreenManager : Singleton<ScreenManager>
 {
         public List<ScreenBase> screenBases;
+        public List<GameObject> objs;
 
         public ScreenType startScreen = ScreenType.Panel;
 
         private ScreenBase _currentScreen;
 
+        public Vector3 vec;
+
 
         private void Start()
         {
+            objs.GetRandom();
+
             HideAll();
             ShowByType(startScreen);
         }
+
 
         public void ShowByType(ScreenType type)
         {

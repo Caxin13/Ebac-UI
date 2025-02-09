@@ -12,12 +12,19 @@ public class Car : MonoBehaviour
     public int TotalSpeed
     {
         get { return speed * gear; }
+       
     }
 
     public void CreateCar()
     {
         var a = Instantiate(carPrefab);
         a.transform.position = Vector3.zero;
+       
     }
+
+
+        
+
+        
 }
 

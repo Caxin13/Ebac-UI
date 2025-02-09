@@ -33,8 +33,16 @@ public class CarEditor : Editor
         if (GUILayout.Button("Create Car"))
         {
             myTarget.CreateCar();
+            TipoDeCarro();
         }
 
+        }
+    public void TipoDeCarro()
+    {
+        List<string> CarNames = new List<string> { "Pequeno", "Grande", "Velho", "Novo" };
 
+        string randomName = CarNames.GetRandom();
+
+        Debug.Log($"Random Name: {randomName}");
     }
 }
